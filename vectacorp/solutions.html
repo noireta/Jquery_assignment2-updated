@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script>
+
+		$(window).load(function(){
+      		$("#sticker").sticky({ topSpacing: 50 });
+    	});
+		
+		$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			}); 
+			
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+
+		$(document).ready(function(){
+	
+		});
+	</script>
+	<style>
+		.scrollup{
+			width:40px;
+			height:40px;			
+			text-indent:-9999px;
+			opacity:0.3;
+			position:fixed;
+			bottom:50px;
+			right:100px;
+			display:none;			
+			background: url('images/icon_top.png') no-repeat;
+		}
+	
+	</style>
+</head>
+<body>
+	<main class="container" id="top">
+		<figure class="three columns">
+			<img src="images/logo.gif" class="scale-with-grid" alt="">
+		</figure>
+		
+		<nav class="thirteen columns">
+			<ul id="responsive-menu">
+				<li><a href="index.html" title="Welcome to Vecta Corp.">Home</a></li>
+				<li><a href="aboutus.html" title="Learn about Vecta Corp.,our solutions and job opportunities">About Us</a></li>
+				<li><a href="solutions.html"  title="Vecta Corp. offers 3 solutions for prospecting, converting, and retaining customers.">Solutions</a></li>
+				<li><a href="support.html" title= "We provide detailed documentation and technical support">Support</a></li>
+				<li><a href="contactus.html" title="Our email and phone number to reach us">Contact Us</a></li>
+
+			</ul>
+		</nav>
+		
+		<header class="sixteen columns">
+			<img src="images/header.gif" class="scale-with-grid" alt="">
+		</header>
+		
+		<section id="welcome" class="eleven columns">
+			<h4 >Our Solutions</h4>
+			<!-- start work -->
+ 
+			<p>vProspect2.0</p>
+            <ul>
+            <li>Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience. vProspect can help your business:</li>
+
+            <li>Define your target audience and competition.</li>
+  
+            <li>Research your competition and your target audience's behavior, needs, technical know-how level, etc.</li>
+
+            <li>Establish a conceptual and visual identity that corresponds to the defined direction of the company.</li>
+  
+            <li>Ensure consistency across all media.</li>
+  
+            <li>Establish corporate guidelines for cohesiveness of any future developments.</li>
+
+            <li>Define and/or re-defining your service and/or product offerings.</li>
+  
+            <li>Define expansion plans and strategies.</li>
+  
+            <li>Implement Search Engine Optimization of all Online materials.</li>
+            </ul>
+		
+        </div>
+		
+			<div  id="vcontain" >
+				
+				<p>vConvert 2.0</p>
+		         
+				<ul>
+					<li>Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level. vConvert can help your business:</li>
+		
+					<li>Build a visual and functional user front end that focuses exclusively on providing an exceptional user experience while conveying company, service and product information.</li>
+					  
+					<li>Cause the desired emotional response in a user to facilitate conversion to a client.</li>
+					  
+					<li>Build sites that move beyond merely conveying information. They advertise, motivate, excite and inspire. Users are more likely to remember and recommend your site.</li>
+					  
+					<li>Research your target audience's behavior, needs, technical know-how and level, etc.</li>
+		
+					<li>Develop any applicable back-end programs to facilitate user interaction with the company and offerings on a highly functional level to allow any kind of online transactions and a completely centralized information collection and access point, accessible from any location.</li>
+		
+					<li>Create an architecture to display the site content and information in a logical and easy to access manner. Facilitating thereby the desired ease, for the user to find what they are looking for quickly and easily. Allowing the user to focus on the subject at hand rather than searching for information on the site.</li>
+		
+				</ul>
+
+			</div>
+			<div id="vretain" >
+			  <p>vRetain 1.0</p>
+			  <ul>
+				  <li>Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues. vRetain can help your business:</li>
+		
+				  <li>Streamline existing business infrastructures by utilizing technology for automation, information centralization, and information sharing among all business units and departments, as well as efficient prospect & customer tracking and interaction within the company.</li>
+		
+				  <li>Collect crucial information, data and statistics that allow a company to keep in touch with users in a very customized, highly targeted way.</li>
+		
+				  <li>Analyze site visitor behavior through traffic analysis, usability studies and interactive polling. Recommending and making site and application adjustments to improve usability and user experience.</li>
+				  
+			  </ul>
+            			  
+			<a href="#top" class="scrollup" style="display: none;">Scroll</a>
+			</div>
+		  </div>
+		
+        <!-- end work -->
+			<p>&nbsp;</p>
+		</section>
+		
+		<section id="testimonials" class="five columns">
+			     
+			<!-- INSERT ACCORDION HERE -->
+			<div id="sticker">
+			  <h4>Quick Nav</h4>
+		   	    <ul>
+				  <li>
+					<a href="#vprospect">vProspect 2.0</a>
+				  </li> <br>
+				  <li>
+					<a href="#vcontain">vContain 2.0</a>
+				  </li><br>
+				  <li >
+					<a href="#vretain">vRetain 1.0</a>
+				  </li>
+				</ul>
+			 </div>
+<!-- INSERT ACCORDION HERE END -->
+	</section>
+</main>
+</body>
+</html>
